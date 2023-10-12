@@ -1,0 +1,658 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+:root {
+  --primaryColor: #548b68;
+  --darkColor: #003c2f;
+  --buttomColor: #2bb90a;
+  --timeLineDotsColor: #eab308;
+}
+* {
+  font-family: "Baloo Bhaijaan 2", cursive;
+  scrollbar-width: none; /* Firefox */
+  scroll-behavior: smooth;
+}
+body {
+  overflow-x: hidden;
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  background: #f7f7f7;
+}
+html,
+body {
+  height: 100%;
+}
+/* Hide scrollbar in WebKit-based browsers (Chrome, Safari, etc.) */
+::-webkit-scrollbar {
+  display: none;
+}
+/* 👇 =====Home page (Sections)==== */
+.Logo {
+  box-shadow: 3px 3px 0px var(--primaryColor);
+}
+.Logo:hover {
+  box-shadow: none;
+  position: relative;
+  top: 3px;
+  left: 3px;
+}
+.HeroText {
+  animation: fadeOut 1s 1 ;
+}
+@keyframes fadeOut {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.HeroSectionWarapper {
+  background: linear-gradient(
+   
+  rgba(255, 255, 255, 0.3),
+  rgba(0, 60, 47, 0.2)
+    ),
+    url("./assets/Heroimage.webp") center top / cover;
+  perspective: 10px;
+  overflow-y: auto;
+  background-attachment: fixed;
+}
+.HeroSectionWarapper::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  backdrop-filter: blur(5px);
+  z-index: -1;
+}
+.HeroText {
+  border-radius: 0;
+  text-shadow: 1px 1px 20px rgba(0, 0, 0, 0.6);
+  height: 100%;
+}
+.HeroGradientText {
+  background: linear-gradient(-45deg, var(--buttomColor), #003c2f);
+  text-shadow: 1px 1px 20px rgba(0, 0, 0, 0.1);
+  color: #fff;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.shadow-1 {
+  box-shadow: rgba(84, 139, 104, 0.3) -8px 8px,
+    rgba(84, 139, 104, 0.2) -18px 18px, rgba(196, 200, 205, 0.1) -23px 23px,
+    rgba(196, 200, 205, 0.05) -31px 31px, rgba(84, 139, 104, 0.02) -39px 39px;
+}
+
+.dark-green-gradient {
+  background: linear-gradient(-45deg, var(--primaryColor), var(--darkColor));
+}
+.dark-green-gradient.team-cards {
+  background: linear-gradient(-45deg, var(--darkColor), var(--primaryColor));
+}
+.yellow-gradient {
+  background: radial-gradient(circle at 100%, #c7ef21, transparent);
+}
+.bgwhite {
+  background: linear-gradient(to right, var(--primaryColor), transparent);
+}
+.bgwhite.right {
+  background: linear-gradient(to left, var(--primaryColor), transparent);
+}
+
+.beforeImge::before {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  bottom: -20px;
+  right: -20px;
+  background-color: #c7ef21;
+  filter: blur(40px);
+  border-radius: 50%;
+  z-index: 10;
+}
+.ResourcesCard {
+  margin: 1rem 0;
+  background-color: var(--primaryColor);
+  max-width: 500px;
+  max-height: 200px;
+  color: white;
+  border-radius: 10px;
+  box-shadow: rgba(84, 139, 104, 0.3) -8px 8px,
+    rgba(84, 139, 104, 0.2) -18px 18px, rgba(196, 200, 205, 0.1) -23px 23px,
+    rgba(196, 200, 205, 0.05) -31px 31px, rgba(84, 139, 104, 0.02) -39px 39px;
+  position: relative;
+  display: flex;
+  overflow: hidden;
+  z-index: 1;
+}
+@media (max-width: 1224px) {
+  .ResourcesCard {
+    flex-direction: column;
+  }
+}
+
+.StatisticsSection {
+  background: linear-gradient(-45deg, var(--primaryColor), var(--darkColor));
+  --mask: radial-gradient(67.08px at 50% 90px, #000 99%, #0000 101%)
+      calc(50% - 60px) 0/120px 51% repeat-x,
+    radial-gradient(67.08px at 50% -60px, #0000 99%, #000 101%) 50% 30px/120px
+      calc(51% - 30px) repeat-x,
+    radial-gradient(67.08px at 50% calc(100% - 90px), #000 99%, #0000 101%)
+      calc(50% - 60px) 100%/120px 51% repeat-x,
+    radial-gradient(67.08px at 50% calc(100% + 60px), #0000 99%, #000 101%) 50%
+      calc(100% - 30px) / 120px calc(51% - 30px) repeat-x;
+  -webkit-mask: var(--mask);
+  mask: var(--mask);
+}
+
+.JoinUsBtnShadow {
+  box-shadow: rgba(84, 139, 104, 0.4) 0px 5px, rgba(84, 139, 104, 0.3) 0px 10px,
+    rgba(84, 139, 104, 0.2) 0px 15px, rgba(84, 139, 104, 0.1) 0px 20px,
+    rgba(84, 139, 104, 0.05) 0px 25px;
+}
+.thumbnailAboutUs {
+  box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.5);
+}
+.MenuClass:before {
+  content: "";
+  position: absolute;
+  top: -0.39rem;
+  left: 0.8rem;
+  height: 12px;
+  width: 12px;
+  transform: rotate(45deg);
+  background-color: white;
+  border-left: 1px solid rgb(209 213 219);
+  border-top: 1px solid rgb(209 213 219);
+  z-index: 0;
+}
+.CustomClassMenu {
+  box-shadow: 5px 5px 0px var(--primaryColor);
+  border: 1px solid var(--primaryColor);
+}
+
+.green-gradient {
+  background: var(--primaryColor);
+  background: linear-gradient(
+    -90deg,
+    var(--primaryColor) 0%,
+    rgba(60, 51, 80, 0) 100%
+  );
+  background: -webkit-linear-gradient(
+    -90deg,
+    var(--primaryColor) 0%,
+    rgba(60, 51, 80, 0) 100%
+  );
+}
+
+.scrollUpAnimation {
+  animation: scrollUpAnimation 1.3s ease infinite alternate;
+}
+@keyframes scrollUpAnimation {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(25px);
+  }
+}
+.statisticsCard::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url("./assets/waveBg.webp") center center / cover;
+  inset: 0;
+  opacity: 0.03;
+}
+.statisticsCard {
+  box-shadow: 10px 10px 0px var(--primaryColor);
+}
+/* =============================================Campaign Section Style===================================== */
+/* =============================================Campaign Section Style===================================== */
+/* =============================================Campaign Section Style===================================== */
+.container {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+.timeline {
+  width: 80%;
+  height: auto;
+  max-width: 900px;
+  margin: 0 auto;
+  position: relative;
+}
+.timeline.HomePage {
+  width: 80%;
+}
+.timeline ul li {
+  padding: 20px;
+  background-color: transparent;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.timeline.HomePage ul li:nth-last-child(1) {
+  background-color: #548b6836;
+}
+.timeline-content h1 {
+  font-size: 25px;
+  font-weight: 500;
+  line-height: 30px;
+  margin-bottom: 10px;
+}
+.timeline-content p {
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 300;
+}
+.timeline-content img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  border-radius: 15px 0px 15px 15px;
+}
+.timeline-content.last-Card img {
+  aspect-ratio: 16/12;
+}
+.timeline-content.DirIsLeft img {
+  border-radius: 0px 15px 15px 15px;
+}
+.timeline-content .date {
+  font-size: 13px;
+  margin-bottom: 5px;
+}
+@media only screen and (min-width: 768px) {
+  .timeline::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 2px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--primaryColor);
+  }
+  .timeline ul li {
+    width: 50%;
+    position: relative;
+  }
+  .timeline.HomePage ul li:nth-last-child(1) {
+    margin-bottom: 50px;
+  }
+  .timeline.HomePage ul li:nth-child(odd) {
+    float: left;
+    clear: right;
+    transform: translateX(-30px);
+    border-radius: 20px 0px 20px 20px;
+  }
+  .timeline.HomePage ul li:nth-child(even) {
+    float: right;
+    clear: left;
+    transform: translateX(30px);
+    border-radius: 0px 20px 20px 20px;
+  }
+  .timeline ul li:nth-child(odd) {
+    float: left;
+    clear: left;
+    transform: translateX(-30px);
+    border-radius: 20px 0px 20px 20px;
+  }
+  .timeline ul li:nth-child(even) {
+    float: right;
+    transform: translateX(30px);
+    border-radius: 0px 20px 20px 20px;
+  }
+  .timeline ul li:nth-child(odd) img {
+    border-radius: 15px 0px 15px 15px;
+  }
+  .timeline ul li:nth-child(even) img {
+    border-radius: 0px 15px 15px 15px;
+  }
+  .timeline ul li::after {
+    content: "";
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    background-color: var(--primaryColor);
+    border-radius: 50%;
+    top: 0;
+  }
+  .timeline ul li:nth-child(odd)::after {
+    transform: translate(50%, -50%);
+    right: -30px;
+  }
+  .timeline ul li:nth-child(even)::after {
+    transform: translate(-50%, -50%);
+    left: -30px;
+  }
+  .timeline ul li:hover::after {
+    background-color: var(--timeLineDotsColor);
+  }
+  .timeline-content .date {
+    position: absolute;
+    top: -5px;
+    padding-right: 8px;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .timeline {
+    width: 95%;
+  }
+}
+/* =============================================Next Campaign Banner===================================== */
+/* =============================================Next Campaign Banner===================================== */
+/* =============================================Next Campaign Banner===================================== */
+.NextCampaignBanner {
+  background: var(--darkColor) url("./assets/waveLineBanner.webp");
+  position: relative;
+}
+.NextCampaignBanner span {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  box-shadow: inset -3px -3px 9px rgba(255, 255, 255, 0.25),
+    inset 0px 3px 9px rgba(255, 255, 255, 0.3),
+    inset 0px 1px 1px rgba(255, 255, 255, 0.6),
+    inset 0px -8px 36px rgba(0, 0, 0, 0.3),
+    inset 0px 1px 5px rgba(255, 255, 255, 0.6), 2px 19px 31px rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+  bottom: -80px;
+  animation: BubblesAnimation 3s linear infinite;
+}
+/* the (spans) is the bubbles */
+.NextCampaignBanner span:nth-of-type(1) {
+  left: 20px;
+  animation-delay: 0s;
+}
+.NextCampaignBanner span:nth-of-type(2) {
+  right: 20px;
+  animation-delay: 1.5s;
+}
+.NextCampaignBanner span:nth-of-type(3) {
+  right: 30%;
+  animation-delay: 0.9s;
+}
+.NextCampaignBanner span:nth-of-type(4) {
+  left: 10%;
+  animation-delay: 2s;
+}
+.NextCampaignBanner span:nth-of-type(5) {
+  right: 50%;
+  animation-delay: 1s;
+}
+@keyframes BubblesAnimation {
+  0% {
+    transform: translateY(100px);
+  }
+  100% {
+    transform: translateY(-500px);
+  }
+}
+/* CSS For Subscribtion Button (تابع ل next Campaign banner) */
+.SubscribeBTN {
+  background-image: radial-gradient(
+      93% 87% at 87% 89%,
+      rgba(0, 0, 0, 0.23) 0%,
+      transparent 86.18%
+    ),
+    radial-gradient(
+      66% 66% at 26% 20%,
+      rgba(255, 255, 255, 0.55) 0%,
+      rgba(255, 255, 255, 0) 69.79%,
+      rgba(255, 255, 255, 0) 100%
+    );
+  box-shadow: inset -3px -3px 9px rgba(255, 255, 255, 0.25),
+    inset 0px 3px 9px rgba(255, 255, 255, 0.3),
+    inset 0px 1px 1px rgba(255, 255, 255, 0.6),
+    inset 0px -8px 36px rgba(0, 0, 0, 0.3),
+    inset 0px 1px 5px rgba(255, 255, 255, 0.6), 2px 19px 31px rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+}
+.SubscribeBTN:hover {
+  box-shadow: inset 3px 3px 9px rgba(255, 255, 255, 0.25),
+    inset 0px 3px 9px rgba(255, 255, 255, 0.3),
+    inset 0px 1px 1px rgba(255, 255, 255, 0.6),
+    inset 0px 44px 36px rgba(0, 0, 0, 0.3),
+    inset 0px 1px 5px rgba(255, 255, 255, 0.6),
+    2px -19px 31px rgba(0, 0, 0, 0.2);
+  transform: scale(0.95);
+}
+/* =============================================Testimonails Section===================================== */
+/* =============================================Testimonails Section===================================== */
+/* =============================================Testimonails Section===================================== */
+.TestimonailsBackCard {
+  width: 104%;
+  height: 95%;
+  position: absolute;
+  top: 2%;
+  left: -2%;
+  z-index: -1;
+  background: #fff;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+}
+.TestimonailsCard.Left {
+  animation: LeftArrowClickAnimation 0.2s linear;
+}
+@keyframes LeftArrowClickAnimation {
+  0% {
+    transform: translateX(-3%);
+    transition: 0.5s ease-in-out;
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+.TestimonailsCard.Right {
+  animation: RighttArrowClickAnimation 0.2s linear;
+}
+@keyframes RighttArrowClickAnimation {
+  0% {
+    transform: translateX(3%);
+    transition: 0.5s ease-in-out;
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+.TestimonailsBackCard.Right {
+  animation: theBackCardWhenClikeRightArrow 0.5s ease-in-out;
+}
+@keyframes theBackCardWhenClikeRightArrow {
+  0% {
+    transform: translateX(-3%);
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+.TestimonailsBackCard.Left {
+  animation: theBackCardWhenClikeLeftArrow 0.5s ease-in-out;
+}
+@keyframes theBackCardWhenClikeLeftArrow {
+  0% {
+    transform: translateX(3%);
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@media (min-width: 1700px) {
+  .blob-1 {
+    right: 11rem;
+  }
+}
+@media (max-width: 450px) {
+  .PlusOneRemWidth {
+    width: calc(100% + 1rem);
+  }
+}
+.TestimonailsCard {
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+  animation: slideAnime 1s;
+}
+@media (max-width: 450px) {
+  .TestimonailsCard {
+    width: 300px;
+  }
+}
+.beforeTitle::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 10px;
+  left: 0;
+  bottom: 0.45rem;
+  background-color: rgba(98, 175, 126, 0.8);
+  display: block;
+  z-index: -1;
+}
+.shadow-2 {
+  text-shadow: 0px 20px 0px rgba(84, 139, 104, 0.06),
+    0px 40px 0px rgba(84, 139, 104, 0.06), 0px 60px 0px rgba(84, 139, 104, 0.06),
+    0px 80px 0px rgba(84, 139, 104, 0.06),
+    0px 100px 0px rgba(84, 139, 104, 0.06),
+    0px 120px 0px rgba(84, 139, 104, 0.06),
+    0px 140px 0px rgba(84, 139, 104, 0.06),
+    0px 160px 0px rgba(84, 139, 104, 0.06),
+    0px 180px 0px rgba(84, 139, 104, 0.06),
+    0px 200px 0px rgba(84, 139, 104, 0.06),
+    0px 220px 0px rgba(84, 139, 104, 0.06),
+    0px 240px 0px rgba(84, 139, 104, 0.06),
+    0px 260px 0px rgba(84, 139, 104, 0.06),
+    0px 280px 0px rgba(84, 139, 104, 0.06),
+    0px 300px 0px rgba(84, 139, 104, 0.06),
+    0px 320px 0px rgba(84, 139, 104, 0.06),
+    0px 340px 0px rgba(84, 139, 104, 0.06),
+    0px 360px 0px rgba(84, 139, 104, 0.06),
+    0px 380px 0px rgba(84, 139, 104, 0.06);
+}
+/* 👇.. the Slider in the About us page  */
+.slider-container {
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  background: #fff url("./assets/waveLineBanner.webp");
+}
+.keyframeSliderText h1 {
+  animation: keyframeSliderText 0.5s ease-in-out 1 forwards;
+}
+.keyframeSliderText p {
+  opacity: 0;
+  animation: keyframeSliderText 0.5s ease-in-out 1 forwards;
+  animation-delay: 0.1s;
+}
+.keyframeSliderImage {
+  opacity: 0.3;
+  animation: keyframeSliderImage 0.5s ease-in 1 forwards;
+}
+@keyframes keyframeSliderImage {
+  0% {
+    opacity: 0.3;
+    transform: translateY(-5px);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes keyframeSliderText {
+  from {
+    opacity: 0.5;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* 👇 ... Style for the FAQs Section */
+.contentBx .label::before {
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: 0;
+  right: auto;
+  font-size: 2rem;
+  transition: 0.4s;
+  width: 16px;
+  height: 16px;
+  background: url("./assets/down-arrow.webp");
+}
+.contentBx .label.direction-is-left::before {
+  right: 0;
+  left: auto;
+}
+.contentBx.active .label::before {
+  transform: rotate(-90deg);
+}
+.divider {
+  height: 100px;
+  width: 100%;
+  position: absolute;
+  top: -100px;
+  right: 0;
+  background: linear-gradient(to top, #f7f7f7, transparent);
+}
+
+.locationImg {
+  max-width: 200px;
+  max-height: 200px;
+  object-fit: contain;
+}
+
+.errorMessageSpan {
+  color: rgba(255, 23, 23, 0.7);
+  padding-top: 5px;
+  display: none;
+}
+input:invalid[focused="true"] ~ .errorMessageSpan {
+  display: block;
+}
+input:invalid[focused="true"] {
+  border: 1px solid rgba(255, 23, 23, 0.7);
+}
+
+/* the one Scroll animation */
+.OnScrollAnimation {
+  opacity: 0;
+  transition: all 1s;
+  transform: translateY(60%);
+}
+.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+.OnScrollAnimation.OnScrollTranslateY-0 {
+  transform: translateY(20%);
+}
+.show.OnScrollTranslateY-0 {
+  transform: translateY(0);
+}
+.element-1 {
+  transition-delay: 0s;
+}
+
+.element-2 {
+  transition-delay: 0.1s;
+}
+
+.element-3 {
+  transition-delay: 0.2s;
+}
+
+.element-4 {
+  transition-delay: 0.3s;
+}
