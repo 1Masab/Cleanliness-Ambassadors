@@ -8,7 +8,7 @@ import kr from '../data/LanguageData/kr.json';
 const LanguageContext = createContext(undefined);
 
 export const LanguageProvider = ({ children }) => {
-  const [language, setLanguage] = useState("AR");
+  const [language, setLanguage] = useState("EN");
 
 
   const isRtl = language === "AR" || language === "KR";
