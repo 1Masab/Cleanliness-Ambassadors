@@ -14,10 +14,12 @@ const Header = () => {
   return (
     <header className="flex items-center shadow-md bg-white justify-between px-1 py-2 sm:px-6 z-[60] fixed w-full">
       <div className=" flex  items-center cursor-pointer ">
+        <Link to="/">
         <img
           src={Logo}
           className="Logo w-[50px] h-[50px] relative border-2 rounded-lg border-primary"
-        ></img>
+          />
+          </Link>
         {/* I am user ternary operator to apply some styles because there is an issue related to how Tailwind CSS
             processes the rtl: and ltr: classes when applied to inline elements like span or Pseudo-elements.*/}
         <h1
