@@ -9,11 +9,11 @@ const NavBar = () => {
   return (
     <>
       {NavLinks.map((link) => (
-        <li key={link.linkName}>
+        <li key={link.linkName} className="px-1">
           <Link
             to={`${link.linkPath}`}
-            className={`hover:text-white hover:bg-primary px-2 rounded-lg cursor-pointer transition duration-100 ${
-              location.pathname === link.linkPath ? 'bg-primary text-white' : ''
+            className={`hover:text-[#35997b] rounded-lg  cursor-pointer transition duration-100 ${
+              location.pathname === link.linkPath ? 'border-b-2 border-primary rounded-none' : ''
             }`}
           >
             {currentLanguage[link.linkName]}
