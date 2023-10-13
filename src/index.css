@@ -47,7 +47,7 @@ body {
   }
 }
 .HeroSectionWarapper {
-  background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(0, 60, 47, 0.2)),
+  background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(0, 60, 47, 0.4)),
     url("./assets/Heroimage.webp") center top / cover;
   perspective: 10px;
   overflow-y: auto;
@@ -69,8 +69,8 @@ body {
   height: 100%;
 }
 .HeroGradientText {
-  background: linear-gradient(-45deg, var(--buttomColor), #003c2f);
-  text-shadow: 1px 1px 20px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(-45deg, var(--buttomColor), #004b3c);
+  text-shadow: 1px 1px 20px rgba(0, 0, 0, 0.2);
   color: #fff;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
