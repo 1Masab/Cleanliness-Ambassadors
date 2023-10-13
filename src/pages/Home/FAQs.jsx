@@ -1,5 +1,4 @@
-import { useState } from "react";
-import { styles } from "../../styles";
+import React,{ useState } from "react";
 import { FAQsData } from "../../data/Constants";
 import { useLanguage } from "../../context/LanguageContext";
 import { tree } from "../../assets";

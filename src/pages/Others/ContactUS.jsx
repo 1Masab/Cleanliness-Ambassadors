@@ -22,6 +22,7 @@ const ContactUS = () => {
     console.log("Name:", formData.Name);
     console.log("Email:", formData.email);
     console.log("Message:", formData.message);
+    setFormData({Name:"",email:"",message:""})
   };
 
   return (

@@ -11,6 +11,8 @@ import { useLanguage } from "./context/LanguageContext";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import NextCampaignForme from "./pages/Others/NextCampaignForme";
 import Donate from "./pages/Others/Donate";
+import AllCamps from "./pages/Others/AllCamps";
+import React from "react";
 const App = () => {
   const { isRtl } = useLanguage();
   return (
@@ -29,6 +31,7 @@ const App = () => {
             <Route path="/Contact" element={<ContactUS />} />
             <Route path="/NextCampaignFrome" element={<NextCampaignForme />} />
             <Route path="/Donate" element={<Donate />} />
+            <Route path="/allCampaigns" element={<AllCamps />} />
           </Routes>
         </main>
         <Footer />

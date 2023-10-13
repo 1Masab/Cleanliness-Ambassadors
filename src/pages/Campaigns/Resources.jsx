@@ -1,3 +1,4 @@
+import React from "react";
 import { Resource1, Resource2 } from "../../assets";
 import SectionsTitle from "../../components/SectionsTitle";
 import { useLanguage } from "../../context/LanguageContext";

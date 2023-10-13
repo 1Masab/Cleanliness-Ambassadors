@@ -20,7 +20,7 @@ const GoogleMap = () => {
           title: location["Location Description"],
           icon: {
             // custom pinPoint URL icon
-            url: "/LocationMarker.png",
+            url: "/LocationMarker.webp",
             scaledSize: new window.google.maps.Size(60, 60),
           },
         });

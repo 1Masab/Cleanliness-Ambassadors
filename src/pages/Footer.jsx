@@ -1,3 +1,4 @@
+import React from "react";
 import { LogoWhite } from "../assets";
 import { useLanguage } from "../context/LanguageContext";
 import { SocialMediaIconsContent } from "../data/Constants";

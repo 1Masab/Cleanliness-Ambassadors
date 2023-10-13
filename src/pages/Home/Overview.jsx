@@ -1,3 +1,4 @@
+import React from "react";
 import VideoPopUp from "./VideoPopUp";
 import { styles } from "../../styles";
 import { useLanguage } from "../../context/LanguageContext";
@@ -14,18 +15,15 @@ const Overview = () => {
       >
         {/* 👇 down here the container that wraps all the contenet of the about us section  */}
         <div
-          className={`relative grid lg:grid-cols-2 grid-cols-1 grid-rows-1 md:gap-6 gap-5 ${styles.padding} max-w-7xl mx-auto relative OnScrollAnimation OnScrollTranslateY-0`}
+          className={`relative grid lg:grid-cols-2 grid-cols-1 grid-rows-1 md:gap-6 gap-5 ${styles.padding} max-w-7xl mx-auto OnScrollAnimation OnScrollTranslateY-0`}
         >
           {/* 👇 this is the first container of content which conten the video thumbnail and the text */}
-          {/* 👇 the video thumbnail and pop-up youtube video window */}
-          <div className="p-2 border-white border rounded-2xl flex items-center justify-center max-w-[500px] mx-auto">
+          <div className="p-2 border-white border rounded-2xl flex items-center justify-center max-w-[500px] mx-auto fixed-element">
             <VideoPopUp />
           </div>
           {/* 👇 this is the text container overview and who we are */}
           <div className="max-w-[600px] mt-2">
-            <h3
-              className={`${styles.sectionSubText} text-white`}
-            >
+            <h3 className={`${styles.sectionSubText} text-white`}>
               {currentLanguage.Overview}
             </h3>
             <SectionsTitle

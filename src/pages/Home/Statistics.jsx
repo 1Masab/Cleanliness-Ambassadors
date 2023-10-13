@@ -1,3 +1,4 @@
+import React from "react";
 import { StatisticsCardContent } from "../../data/Constants";
 import { styles } from "../../styles";
 import { useLanguage } from "../../context/LanguageContext";

@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React,{ useState } from "react";
 import { leftArrow, rightArrow } from "../../assets";
 import SectionWrapper from "../../hoc/SectionWrapper";
 import { TestimonialData } from "../../data/Constants";

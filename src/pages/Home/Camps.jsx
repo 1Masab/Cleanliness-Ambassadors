@@ -1,3 +1,4 @@
+import React from "react";
 import { useLanguage } from "../../context/LanguageContext";
 import { JoinButton } from "../../components";
 import { NextCampaignIllustration, waveImgCampaignsTop } from "../../assets";
@@ -24,10 +25,10 @@ const Camps = () => {
         <div className="timeline HomePage">
           <ul>
             {/* 👇 this component renders the past Campaings Cards*/}
-            <CampaignsCards startIndex={2} endIndex={6} theSkipedIndex={1} />
+            <CampaignsCards startIndex={2} endIndex={6} theSkipedIndex={1} RenderOneImage/>
             <li>
               <div className="timeline-content last-Card border-2 border-primary p-4 rounded-NextCampaign">
-                <img src={NextCampaignIllustration} className=" " />
+                <img src={NextCampaignIllustration} />
                 <h1>{currentLanguage.theNextCampaignHeadText}</h1>
                 <p>{currentLanguage.NextCampaignDate} : 2023-12-3</p>
                 <Link
@@ -40,7 +41,9 @@ const Camps = () => {
             </li>
           </ul>
         </div>
-        <JoinButton BtnText={"NextCampaignBTN"} BtnStyle={"text-white"} />
+        <Link to="/allCampaigns">
+        <JoinButton BtnText={"LaodMore"} BtnStyle={"text-white"} />
+        </Link>
       </section>
     </>
   );

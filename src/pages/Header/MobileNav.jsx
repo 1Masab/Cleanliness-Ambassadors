@@ -1,3 +1,4 @@
+import React from "react";
 import { NavLinks } from "../../data/Constants";
 import { useLanguage } from "../../context/LanguageContext";
 import { Link } from "react-router-dom";
@@ -13,7 +14,7 @@ const MobileNav = () => {
           <Link
             to={link.linkPath}
             key={link.linkName}
-            className="cursor-pointer w-[80%] flex items-center justify-start gap-2 CustomClassMenu p-4 text-xl rounded-xl bg-white"
+            className="cursor-pointer w-[80%] flex items-center justify-start gap-2 border border-primary border-solid p-4 text-xl rounded-xl bg-white shadow-[5px_5px_0px_rgb(84,139,104)]"
           >
             <img src={link.icon} alt={link.linkName} className="w-[10%]" />
             {currentLanguage[link.linkName]}

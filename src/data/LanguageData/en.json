@@ -203,5 +203,7 @@
     "expirationPlaceHolder": "MM / YY",
     "cvcPlaceHolder": "CVC"
   },
-  "donate":"Donate"
+  "donate": "Donate",
+  "scrollUp": "Scroll up",
+  "allCampaignPlaceHoderText": "Raising awareness of the dangers of plastic waste is one of the most prominent activities of the Voluntary Cleanliness Ambassadors campaign in Iraq, as the campaign received youth support, transforming it from an individual idea a year ago into collective action in various Iraqi cities."
 }

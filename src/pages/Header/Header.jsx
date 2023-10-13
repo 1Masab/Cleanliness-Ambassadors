@@ -1,9 +1,10 @@
-import { useState } from "react";
+import React,{ useState } from "react";
 import { useLanguage } from "../../context/LanguageContext";
-import { LanguageSelector } from "../../components";
+import { JoinButton, LanguageSelector } from "../../components";
 import { languageIcon, Logo, menuIcon, closeIcon } from "../../assets";
 import MobileNav from "./MobileNav";
 import NavBar from "./NavBar";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const [selectLanguage, setSelectLangauge] = useState(false); // state to toggle the languages menu
@@ -31,9 +32,8 @@ const Header = () => {
         </h1>
       </div>
       <nav>
-        <ul className=" gap-4 hidden md:flex ">{<NavBar />}</ul>
+        <ul className=" gap-4 hidden lg:flex">{<NavBar />}</ul>
       </nav>
-
       <div className="flex gap-6 items-center z-50">
         <div
           className="cursor-pointer relative w-6"
@@ -44,7 +44,7 @@ const Header = () => {
         </div>
         {/* this is the Hamborger Navba for mobile 👇👇👇 */}
         <div
-          className={`md:hidden flex items-center justify-center transform cursor-pointer ${
+          className={`lg:hidden flex items-center justify-center transform cursor-pointer ${
             isRtl ? "" : "scale-x-[-1]"
           }`}
         >

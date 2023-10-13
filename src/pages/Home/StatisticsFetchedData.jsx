@@ -1,3 +1,4 @@
+import React from "react";
 import { useApiData } from "../../context/ApiContext";
 const FetchApi = ({ NumOf }) => {
   const { apiData } = useApiData();

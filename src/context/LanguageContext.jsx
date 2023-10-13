@@ -1,4 +1,4 @@
-import { createContext, useContext, useState } from "react";
+import React,{ createContext, useContext, useState } from "react";
 import ar from '../data/LanguageData/ar.json';
 import en from '../data/LanguageData/en.json';
 import kr from '../data/LanguageData/kr.json';

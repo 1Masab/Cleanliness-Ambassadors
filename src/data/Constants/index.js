@@ -28,11 +28,11 @@ import {
 
 const NavLinks = [
   { linkName: "Home", icon: Home, linkPath: "/" },
-  { linkName: "About", icon: Aboutus, linkPath: "About" },
-  { linkName: "Campaigns", icon: Campaigns, linkPath: "Campaigns" },
-  { linkName: "Map", icon: Map, linkPath: "Map" },
-  { linkName: "Contact", icon: ContactUS, linkPath: "Contact" },
-  { linkName: "donate", icon: donationIcon, linkPath: "Donate" },
+  { linkName: "About", icon: Aboutus, linkPath: "/About" },
+  { linkName: "Campaigns", icon: Campaigns, linkPath: "/Campaigns" },
+  { linkName: "Map", icon: Map, linkPath: "/Map" },
+  { linkName: "Contact", icon: ContactUS, linkPath: "/Contact" },
+  { linkName: "donate", icon: donationIcon, linkPath: "/Donate" },
 ];
 const StatisticsCardContent = [
   {

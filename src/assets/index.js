@@ -59,7 +59,6 @@ import wave4 from "./wave-haikei4.svg";
 import wave5 from "./wave-haikei5.svg";
 import waveImgCampaignsTop from "./wave-haikei3.svg";
 
-
 import plant2 from "./plant2.jpg";
 
 
@@ -67,7 +66,6 @@ export {
   Aboutus,
   building,
   CampaignHero,
-  Campaigns,
   Campaigns,
   closeIcon,
   ContactUS,
@@ -92,8 +90,6 @@ export {
   Murtadh,
   NextCampaignf,
   NextCampaignIllustration,
-  Partner2,
-  Partner3,
   plant1,
   plant2,
   playButton,

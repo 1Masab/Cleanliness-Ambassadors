@@ -1,3 +1,4 @@
+import React from "react";
 import SectionWrapper from "../../hoc/SectionWrapper";
 import SectionsTitle from "../../components/SectionsTitle";
 import SubscribInput from "../../components/SubscribInput";

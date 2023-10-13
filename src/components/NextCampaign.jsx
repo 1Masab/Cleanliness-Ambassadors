@@ -1,3 +1,4 @@
+import React from "react";
 import { NextCampaignf } from "../assets";
 import NextCampDetalis from "./NextCampDetalis";
 const NextCampaign = () => {

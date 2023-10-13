@@ -1,7 +1,9 @@
+import React from "react";
 import { styles } from "../../styles";
 import { swipeUpIcon } from "../../assets";
 import JoinButton from "../../components/JoinButton";
 import { useLanguage } from "../../context/LanguageContext";
+import { Link } from "react-router-dom";
 // this is the landing Section {هذا القسم الاول صفحة البداية او الهيرو }
 const LandingHome = () => {
   const { language, currentLanguage } = useLanguage();
@@ -25,10 +27,12 @@ const LandingHome = () => {
         <p className="text-white md:text-xl text-[17px] leading-[25px] mb-4 font-semibold">
           {currentLanguage.HeroPtagText}
         </p>
+        <Link to="/NextCampaignFrome">
         <JoinButton
           BtnStyle={"bg-white text-primary hover:bg-primary hover:text-white"}
           BtnText={"JoinUSButton"}
-        />
+          />
+          </Link>
       </div>
 
       <a

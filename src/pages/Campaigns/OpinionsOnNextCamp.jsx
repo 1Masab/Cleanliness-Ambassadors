@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import SectionsTitle from "../../components/SectionsTitle";
 import Input from "../../components/Input";
 import { JoinButton } from "../../components";
 import { useLanguage } from "../../context/LanguageContext";
@@ -21,6 +20,7 @@ const OpinionsOnNextCamp = () => {
     e.preventDefault();
     console.log("Email:", formData.email);
     console.log("Message:", formData.message);
+    setFormData({email: "",message:""})
   };
 
   return (

@@ -1,6 +1,6 @@
 import { SliderImagesAboutus, SliderTextAboutus } from "../../data/Constants";
 import { useLanguage } from "../../context/LanguageContext";
-import { useState } from "react";
+import React,{ useState } from "react";
 import { JoinButton } from "../../components";
 import { wave4 } from "../../assets";
 
@@ -29,10 +29,11 @@ const Slider = () => {
               <div key={index} className="md:w-[350px] w-[85%] md:h-[350px] h-[300px]">
                 <img
                   src={item.image}
-                  className={`w-full h-full object-cover rounded-xl relative -top-[100px] md:top-0  ${
+                  className={`w-full h-full object-cover rounded-xl relative -top-[100px] md:top-0 ${
                     isRtl ? "md:-right-[80px]" : "md:-left-[80px]"
                   } shadow-xl keyframeSliderImage`}
                   alt={`Slider Image ${index}`}
+                  style={{background:"lin"}}
                 />
               </div>
             );
