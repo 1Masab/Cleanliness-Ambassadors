@@ -6,7 +6,7 @@ const JoinButton = ({type,BtnText,BtnStyle,onclick}) => {
     <button className={`bg-primary py-2 px-7 rounded-JoinUsBottunradius border-2 border-primary transition-all JoinUsBtnShadow ${BtnStyle} hover:bg-[#003c2fce]`}
     type={type}
     onClick={onclick}>
-        <a>{currentLanguage[BtnText] || "انظم لنا"}</a>
+        {currentLanguage[BtnText] || "انظم لنا"}
     </button>
   )
 }

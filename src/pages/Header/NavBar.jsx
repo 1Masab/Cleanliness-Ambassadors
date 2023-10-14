@@ -14,7 +14,7 @@ const NavBar = () => {
             to={`${link.linkPath}`}
             className={`hover:text-[#35997b] rounded-lg  cursor-pointer transition duration-100 ${
               location.pathname === link.linkPath
-                ? "border-b-2 border-primary text-[#35997b] rounded-none"
+                ? "border-b-2 border-[#35997b] text-[#35997b] rounded-none"
                 : ""
             }`}
           >
