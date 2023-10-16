@@ -84,7 +84,7 @@ const GoogleMap = () => {
         billing. And I don't have debit Card (: &#x58;
         {/* <br /> */}{" "}
         <span className="text-blue-500">
-          &#x58; Refresh the Page if the Map isn't loading &#x58;
+          &#x58; Refresh the Page ↻ if the Map isn't loading &#x58;
         </span>
       </h1>
       <div

@@ -56,18 +56,14 @@ const Header = () => {
             onClick={() => setToggleMenu(!toggleMenu)}
           />
         </div>
-        {/* this is the nav bar links for mobile 👇👇👇 render when toggle the menu icon above */}
-        {toggleMenu ? (
-          <div
-            className={`absolute top-0  w-full -translate-y-[550px] right-0 transition-all ${
-              toggleMenu && "-translate-y-[0px]"
-            }`}
-          >
-            <MobileNav />{" "}
-          </div>
-        ) : (
-          ""
-        )}
+        {/* 👇👇👇 this is the nav bar links for mobile render when toggle the menu icon above */}
+        <div
+          className={`absolute -top-2 right-0 w-full transition-all bg-black ${
+            toggleMenu ? "translate-y-[0]" : "translate-y-[-850px] md:translate-y-[-450px]"
+          }`}
+        >
+          <MobileNav toggleMenu={toggleMenu} setToggleMenu={setToggleMenu} />
+        </div>
       </div>
     </header>
   );
