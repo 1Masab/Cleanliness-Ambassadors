@@ -582,6 +582,7 @@ body {
 .contentBx.active .label::before {
   transform: rotate(-90deg);
 }
+/* ============= */
 .divider {
   height: 100px;
   width: 100%;
@@ -590,13 +591,13 @@ body {
   right: 0;
   background: linear-gradient(to top, #f7f7f7, transparent);
 }
-
+/* 👇👇👇 for the Map page */
 .locationImg {
   max-width: 200px;
   max-height: 200px;
   object-fit: contain;
 }
-
+/* 👆👆👆 for the Map page*/
 .errorMessageSpan {
   color: rgba(255, 23, 23, 0.7);
   padding-top: 5px;
@@ -615,6 +616,7 @@ input:invalid[focused="true"] {
   transition: all 1s;
   transform: translateY(60%);
 }
+/* 👇👇 when the element is visalbe show the element */
 .show {
   opacity: 1;
   transform: translateY(0);
@@ -625,6 +627,10 @@ input:invalid[focused="true"] {
 .show.OnScrollTranslateY-0 {
   transform: translateY(0);
   transform: none;
+}
+.active-question {
+  opacity: 1;
+  transform: translateY(0);
 }
 .element-1 {
   transition-delay: 0s;

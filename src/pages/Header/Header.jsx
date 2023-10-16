@@ -12,7 +12,7 @@ const Header = () => {
   const { currentLanguage, isRtl } = useLanguage(); // to access the translation / to access the if the direction is rtl or ltr
 
   return (
-    <header className="flex items-center shadow-md bg-white justify-between px-1 py-2 sm:px-6 z-[60] fixed w-full">
+    <header className="flex items-center shadow-md bg-white justify-between px-2 py-2 sm:px-6 z-[60] fixed w-full">
       <div className=" flex  items-center cursor-pointer ">
         <Link to="/">
           <img

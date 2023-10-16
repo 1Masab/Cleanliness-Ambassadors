@@ -19,7 +19,7 @@ const Banner = () => {
   );
 };
 const NextCampaignForme = () => {
-  const { currentLanguage } = useLanguage();
+  const { currentLanguage,isRtl } = useLanguage();
 
   const [formData, setFormData] = useState({
     Name: "",
@@ -57,13 +57,13 @@ const NextCampaignForme = () => {
     <section>
       <Banner />
       <div
-        className={`w-fit mx-auto flex flex-col justify-center sm:pb-16 py-6 sm:px-0 px-5`}
+        className={`w-full sm:w-fit mx-auto flex flex-col justify-center sm:pb-16 py-6 sm:px-0 px-5`}
       >
         <div className="max-w-xl">
           <h1 className="text-2xl font-bold text-gray-700">
-            {currentLanguage.nextCampaignFormH1}
-            <span className="text-primary">
-              &nbsp;{currentLanguage.nextCampaignFormH1Span}
+            {currentLanguage.nextCampaignFormH1} &nbsp;
+            <span className="text-primary inline-block">
+              {currentLanguage.nextCampaignFormH1Span}
             </span>
           </h1>
           <p>{currentLanguage.nextCampaignFormP1}</p>
@@ -122,7 +122,7 @@ const NextCampaignForme = () => {
             />
           </div>
           <div className="flex md:gap-10 sm:gap-6 sm:flex-row flex-col">
-            <div className="h-[72px] mt-1 max-w-[800px] sm:w-[300px]">
+            <div className="h-[72px] my-1 max-w-[800px] sm:w-[300px]">
               <label className="font-semibold text-gray-700">
                 {currentLanguage.FormTranslation.labelGender}
               </label>
@@ -165,8 +165,8 @@ const NextCampaignForme = () => {
                 >
                   ?
                 </a>
-                :
-                <p className="group-hover:block absolute bottom-8 right-0 text-md font-thin min-w-[300px] bg-slate-500 text-white rounded-xl p-1 text-center hidden">
+                &nbsp;:
+                <p className={`group-hover:block absolute bottom-8 ${isRtl ? "right-0": "left-0"} text-md font-thin min-w-[300px] bg-slate-500 text-white rounded-xl p-1 text-center hidden`}>
                   {currentLanguage.CareerQuestionMarkHidden}
                 </p>
               </label>

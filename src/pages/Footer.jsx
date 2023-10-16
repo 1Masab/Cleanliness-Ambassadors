@@ -19,7 +19,7 @@ const Footer = () => {
           </h4>
 
           <ul className="flex flex-wrap items-center justify-center text-center md:text-start leading-[30px]">
-            <NavBar />
+            <NavBar isfooter={true}/>
           </ul>
         </nav>
         <div>

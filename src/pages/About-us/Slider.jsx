@@ -21,7 +21,7 @@ const Slider = () => {
       <div
         className={`md:max-w-[800px] md:w-auto md:h-[400px] pb-10 md:pb-0 text-center lg:scale-100 md:scale-90
                   md:text-start flex md:flex-row flex-col items-center mx-auto rounded-3xl relative transition-all shadow-xl slider-container
-                  ${isRtl ? "h-[500px]" : "h-[550px]"}`}
+                  ${isRtl ? "h-[500px]" : "h-[560px]"}`}
       >
         {SliderImagesAboutus.map((item, index) => {
           if (index === currentImagesIndex) {
@@ -36,7 +36,6 @@ const Slider = () => {
                     isRtl ? "md:-right-[80px]" : "md:-left-[80px]"
                   }`}
                   alt={`Slider Image ${index}`}
-                  style={{ background: "lin" }}
                 />
               </div>
             );
@@ -49,7 +48,7 @@ const Slider = () => {
             isRtl ? " md:left-10" : " md:right-10"
           } -top-28 md:top-0 `}
         >
-          {/* dots */}
+          {/* nav dots */}
           <div
             className={`h-full flex md:flex-col flex-row p-4 items-center justify-center mb-12 md:mb-0 ${
               isRtl ? "flex-row-reverse" : ""
@@ -65,6 +64,7 @@ const Slider = () => {
                 }`}
                 onClick={() => {
                   setCurrentTextIndex(index);
+                  setCurrentImagesIndex(index);
                 }}
               ></span>
             ))}

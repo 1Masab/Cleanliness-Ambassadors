@@ -6,9 +6,7 @@ export default {
       borderRadius: {
         StatisticsCardRadius: "0px 20px 0px 20px",
         JoinUsBottunradius: "2px 20px 2px 20px",
-        S4: "1rem 6rem 1rem 6rem",
-        StaffImagesRTL: "3rem 0rem 1rem 0rem",
-        StaffImagesLTR: "0rem 3rem 0rem 1rem",
+        S4: "1rem 6rem 1rem 6rem"
       },
       colors: {
         primary: "#548B68",

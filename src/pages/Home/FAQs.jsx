@@ -1,7 +1,7 @@
-import React,{ useState } from "react";
+import React, { useState } from "react";
 import { useLanguage } from "../../context/LanguageContext";
 import { FAQsData } from "../../data/Constants";
-import {SectionsTitle} from "../../components";
+import { SectionsTitle } from "../../components";
 import { tree } from "../../assets";
 // this is the FAQs Section in the Home page {هذا قسم الأسئلة الشائعة }
 const FAQs = () => {
@@ -17,7 +17,11 @@ const FAQs = () => {
   const isBigScreen = window.innerWidth >= 1450;
   return (
     <div className="w-full mx-auto relative px-5">
-      <div className="max-w-3xl relative mx-auto mb-10 2xl:right-44">
+      <div
+        className={`max-w-3xl relative mx-auto mb-10 ${
+          isBigScreen ? "xl:right-44" : ""
+        }`}
+      >
         <SectionsTitle
           title={currentLanguage.FrequentlyAskedQuestions}
           color="before:bg-yellow-300"
@@ -25,7 +29,7 @@ const FAQs = () => {
         {FAQsData.map((item, index) => (
           <div
             key={item.question}
-            className={`contentBx ${activeItems[index] ? "active" : ""} OnScrollAnimation `}
+            className={`contentBx ${activeItems[index] ? "active" : ""}`}
             onClick={() => toggleItem(index)}
           >
             <div

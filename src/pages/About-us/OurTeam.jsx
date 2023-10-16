@@ -10,7 +10,7 @@ const OurTeam = () => {
   const { currentLanguage } = useLanguage();
   return (
     <div className={`mt-10 sm:px-16 px-6 pt-16 bg-[#548b6831] relative`}>
-      <div className="flex justify-evenly lg:px-0 md:px-20 lg:items-center items-start flex-col-reverse lg:flex-row gap-10">
+      <div className="flex justify-between lg:px-0 md:px lg:items-center items-start flex-col-reverse lg:flex-row gap-10">
         <div>
           <h1 className="flex justify-start items-center w-full py-5 pt-0">
             <span
@@ -35,7 +35,7 @@ const OurTeam = () => {
       <img
         src={wave5}
         alt="svg wave shape"
-        className="absolute bottom-[-300px] right-0  h-[300px] w-full"
+        className="absolute bottom-[-300px] right-0 h-[300px] w-full"
       />
     </div>
   );
@@ -47,27 +47,27 @@ const StaffImages = () => {
   const { currentLanguage, isRtl } = useLanguage();
 
   return (
-    <div className="grid grid-cols-2 grid-rows-2 gap-10 sm:gap-16 lg:gap-8 sm:max-w-[400px] w-[300px] sm:w-[420px] z-20">
+    <div className="flex flex-wrap gap-4 md:gap-10 lg:max-w-sm z-20">
       {StaffSocialMediaLinksAndJobs.map((item) => (
         <div
           key={item.memberName}
-          className="relative w-32 h-32 sm:w-[180px] sm:h-[180px]"
+          className="relative w-36 h-36 sm:w-40"
         >
           <img
             src={item.image}
             className="w-full h-full object-cover object-top saturate-50 rounded-2xl border-2 border-gray-300"
           />
           <div
-            className={`w-fit absolute bottom-0 ${
+            className={`w-full absolute bottom-0 ${
               isRtl
-                ? "right-0 rounded-StaffImagesRTL"
-                : "left-0 rounded-StaffImagesLTR"
-            } bg-[#D8E3DC] leading-[15px] border text-sm border-gray-400  px-2 py-2`}
+                ? "right-0"
+                : "left-0"
+            } bg-[#D8E3DC] leading-[15px] border text-sm border-gray-400 px-2 rounded-lg shadow-md py-2`}
           >
             <h4 className="font-mono font-bold text-gray-700 text-[14px] sm:text-[16px]">
-              {currentLanguage[item.memberName].split(" ")[0]} |
+              {currentLanguage[item.memberName].split(" ")[0]}|
               <span className="font-normal text-[12px] sm:text-[14px] text-[#8C465A">
-                &nbsp; {currentLanguage[item.job]} &nbsp;
+                &nbsp;{currentLanguage[item.job]}&nbsp;
               </span>
             </h4>
           </div>

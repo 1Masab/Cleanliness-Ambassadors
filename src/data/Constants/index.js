@@ -114,7 +114,7 @@ const StaffSocialMediaLinksAndJobs = [
     memberName: "SaifName",
     job: "SaifJob",
     icon: instagramRGB,
-    url: "https://www.instagram.com/the.murt/",
+    url: "https://www.instagram.com/saif_a_kareem/",
     iconName: "instagram logo",
   },
   {
@@ -122,7 +122,7 @@ const StaffSocialMediaLinksAndJobs = [
     memberName: "HussainName",
     job: "HussainJob",
     icon: instagramRGB,
-    url: "https://www.instagram.com/the.murt/",
+    url: "https://www.instagram.com/clean.iraq/",
     iconName: "instagram logo",
   },
   {
@@ -130,7 +130,7 @@ const StaffSocialMediaLinksAndJobs = [
     memberName: "MohammedName",
     job: "MohammedJob",
     icon: instagramRGB,
-    url: "https://www.instagram.com/the.murt/",
+    url: "https://www.instagram.com/clean.iraq/",
     iconName: "instagram logo",
   },
 ];
@@ -176,5 +176,5 @@ export {
   SliderImagesAboutus,
   SliderTextAboutus,
   FAQsData,
-  StaffSocialMediaLinksAndJobs
+  StaffSocialMediaLinksAndJobs,
 };

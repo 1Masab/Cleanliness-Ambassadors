@@ -2,7 +2,7 @@ import React from "react";
 import { NavLinks } from "../../data/Constants";
 import { useLanguage } from "../../context/LanguageContext";
 import { Link, useLocation } from "react-router-dom";
-const NavBar = () => {
+const NavBar = ({ isfooter }) => {
   const { currentLanguage } = useLanguage(); // to access the translation
   const location = useLocation(); // Geting the current location
 
@@ -18,7 +18,9 @@ const NavBar = () => {
                 : ""
             }`}
           >
-            {currentLanguage[link.linkName]}
+            {isfooter
+              ? ` | ${currentLanguage[link.linkName]}` + " |"
+              : currentLanguage[link.linkName]}
           </Link>
         </li>
       ))}
