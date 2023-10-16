@@ -1,8 +1,8 @@
 import React,{ useState } from "react";
-import { FAQsData } from "../../data/Constants";
 import { useLanguage } from "../../context/LanguageContext";
+import { FAQsData } from "../../data/Constants";
+import {SectionsTitle} from "../../components";
 import { tree } from "../../assets";
-import SectionsTitle from "../../components/SectionsTitle";
 // this is the FAQs Section in the Home page {هذا قسم الأسئلة الشائعة }
 const FAQs = () => {
   const [activeItems, setActiveItems] = useState(

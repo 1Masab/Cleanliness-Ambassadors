@@ -1,8 +1,7 @@
 import React from "react";
-import SectionWrapper from "../../hoc/SectionWrapper";
-import SectionsTitle from "../../components/SectionsTitle";
-import SubscribInput from "../../components/SubscribInput";
+import { SectionsTitle, SubscribInput } from "../../components";
 import { useLanguage } from "../../context/LanguageContext";
+import SectionWrapper from "../../hoc/SectionWrapper";
 // اشترك لتصلك الاخبار على الايميل
 const StayInformedH = () => {
   const { currentLanguage } = useLanguage();

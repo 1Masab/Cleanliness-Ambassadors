@@ -1,10 +1,10 @@
-import React,{ useState } from "react";
+import React, { useState } from "react";
 import { useLanguage } from "../../context/LanguageContext";
-import { JoinButton, LanguageSelector } from "../../components";
+import { LanguageSelector } from "../../components";
 import { languageIcon, Logo, menuIcon, closeIcon } from "../../assets";
+import { Link } from "react-router-dom";
 import MobileNav from "./MobileNav";
 import NavBar from "./NavBar";
-import { Link } from "react-router-dom";
 
 const Header = () => {
   const [selectLanguage, setSelectLangauge] = useState(false); // state to toggle the languages menu
@@ -15,11 +15,11 @@ const Header = () => {
     <header className="flex items-center shadow-md bg-white justify-between px-1 py-2 sm:px-6 z-[60] fixed w-full">
       <div className=" flex  items-center cursor-pointer ">
         <Link to="/">
-        <img
-          src={Logo}
-          className="Logo w-[50px] h-[50px] relative border-2 rounded-lg border-primary"
+          <img
+            src={Logo}
+            className="Logo w-[50px] h-[50px] relative border-2 rounded-lg border-primary"
           />
-          </Link>
+        </Link>
         {/* I am user ternary operator to apply some styles because there is an issue related to how Tailwind CSS
             processes the rtl: and ltr: classes when applied to inline elements like span or Pseudo-elements.*/}
         <h1

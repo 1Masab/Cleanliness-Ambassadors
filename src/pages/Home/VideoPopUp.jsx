@@ -1,4 +1,4 @@
-import React,{ useState } from "react";
+import React, { useState } from "react";
 import { playButton, QuestionMark } from "../../assets";
 const VideoPopUp = () => {
   const [isPopupVisible, setPopupVisible] = useState(false);
@@ -24,7 +24,7 @@ const VideoPopUp = () => {
           className="w-full h-full object-cover opacity-90"
         />
         {/* Play button */}
-          <img src={playButton} alt="play button icon" className="absolute" />
+        <img src={playButton} alt="play button icon" className="absolute" />
       </button>
 
       {/* Video popup */}

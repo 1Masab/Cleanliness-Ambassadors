@@ -1,16 +1,16 @@
 import React from "react";
-import { styles } from "../../styles";
-import { swipeUpIcon } from "../../assets";
-import JoinButton from "../../components/JoinButton";
 import { useLanguage } from "../../context/LanguageContext";
+import { JoinButton } from "../../components";
+import { swipeUpIcon } from "../../assets";
 import { Link } from "react-router-dom";
+import { styles } from "../../styles";
 // this is the landing Section {هذا القسم الاول صفحة البداية او الهيرو }
 const LandingHome = () => {
   const { language, currentLanguage } = useLanguage();
 
   return (
     <div
-      className={`flex justify-center h-full items-center max-w-[90rem] mx-auto relative ${styles.paddingLandingPage} HeroSection`}
+      className={`flex justify-center h-full items-center max-w-[90rem] mx-auto relative sm:px-16 px-5 sm:pt-16 pt-10 HeroSection`}
     >
       <div className="flex flex-col gap-2 justify-center items-center text-center w-full md:w-[60%] z-10 relative text-white HeroText">
         <h3>{currentLanguage.SofraAlnathafa}</h3>
@@ -28,11 +28,11 @@ const LandingHome = () => {
           {currentLanguage.HeroPtagText}
         </p>
         <Link to="/NextCampaignFrome">
-        <JoinButton
-          BtnStyle={"bg-white text-primary hover:bg-primary hover:text-white"}
-          BtnText={"JoinUSButton"}
+          <JoinButton
+            BtnStyle={"bg-white text-primary hover:bg-primary hover:text-white"}
+            BtnText={"JoinUSButton"}
           />
-          </Link>
+        </Link>
       </div>
 
       <a

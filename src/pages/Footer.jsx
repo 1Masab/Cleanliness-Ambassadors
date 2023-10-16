@@ -2,9 +2,9 @@ import React from "react";
 import { LogoWhite } from "../assets";
 import { useLanguage } from "../context/LanguageContext";
 import { SocialMediaIconsContent } from "../data/Constants";
-import NavBar from "./Header/NavBar";
-import SocialMediaIcons from "../components/SocialMediaIcons";
+import { SocialMediaIcons } from "../components";
 import { Link } from "react-router-dom";
+import NavBar from "./Header/NavBar";
 const Footer = () => {
   const { currentLanguage } = useLanguage();
   return (
@@ -27,8 +27,13 @@ const Footer = () => {
             {currentLanguage.FooterHeadTextSocialMediaLinks}
           </h4>
           <div className="flex gap-5">
-            {SocialMediaIconsContent.map((item,index)=>(
-            <SocialMediaIcons iconName={item.iconName} url={item.url} icon={item.icon} key={index}/>
+            {SocialMediaIconsContent.map((item, index) => (
+              <SocialMediaIcons
+                iconName={item.iconName}
+                url={item.url}
+                icon={item.icon}
+                key={index}
+              />
             ))}
           </div>
         </div>
@@ -40,7 +45,12 @@ const Footer = () => {
           {currentLanguage.DonateToTheCampaign}
         </Link>
       </div>
-      <p className="text-sm">made with Love by <a href="#" className="text-sky-500 hover:text-sky-600 underline">@Masab</a></p>
+      <p className="text-sm">
+        made with Love by{" "}
+        <a href="#" className="text-sky-500 hover:text-sky-600 underline">
+          @Masab
+        </a>
+      </p>
     </footer>
   );
 };

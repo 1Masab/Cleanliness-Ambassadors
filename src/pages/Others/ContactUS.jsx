@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import { styles } from "../../styles";
-import { useLanguage } from "../../context/LanguageContext";
-import { plant1, location, mail, telephone } from "../../assets";
 import Input from "../../components/Input";
-import TextAarea from "../../components/TextAarea";
+import { plant1, location, mail, telephone } from "../../assets";
 import { JoinButton, SocialMediaIcons } from "../../components";
 import { SocialMediaIconsContent } from "../../data/Constants";
+import { useLanguage } from "../../context/LanguageContext";
+import TextAarea from "../../components/TextAarea";
 const ContactUS = () => {
   const { currentLanguage } = useLanguage();
   const [formData, setFormData] = useState({
@@ -22,7 +22,7 @@ const ContactUS = () => {
     console.log("Name:", formData.Name);
     console.log("Email:", formData.email);
     console.log("Message:", formData.message);
-    setFormData({Name:"",email:"",message:""})
+    setFormData({ Name: "", email: "", message: "" });
   };
 
   return (
@@ -69,13 +69,15 @@ const ContactUS = () => {
           </div>
 
           <div className={`sm:w-auto w-full py-10 px-5 sm:px-10`}>
-            <h1 className="font-thin text-3xl text-white">{currentLanguage.ContactUsFormTitle}</h1>
+            <h1 className="font-thin text-3xl text-white">
+              {currentLanguage.ContactUsFormTitle}
+            </h1>
             <h1 className="font-thin text-lg text-slate-100 pt-1">
               {currentLanguage.ContactUsFormSubTitle}
             </h1>
             <form className="mt-4" onSubmit={handleSubmit}>
               <Input
-                  label={currentLanguage.FormTranslation.labelName}
+                label={currentLanguage.FormTranslation.labelName}
                 type={"text"}
                 name={"Name"}
                 value={formData.Name}

@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { useLanguage } from "../context/LanguageContext";
 
-const NextCampaign = () => {
+const NextCampaignBanner = () => {
   const { currentLanguage } = useLanguage();
   return (
     <section>
@@ -11,7 +11,10 @@ const NextCampaign = () => {
           <p className="sm:text-2xl text-xl w-full sm:w-[90%] lg:w-[50%] leading-normal">
             {currentLanguage.bannerText}
           </p>
-          <Link to="/NextCampaignFrome" className="border py-6 px-10 rounded-2xl sm:scale-100 scale-95 SubscribeBTN">
+          <Link
+            to="/NextCampaignFrome"
+            className="border py-6 px-10 rounded-2xl sm:scale-100 scale-95 NextCampaignBanner-Button"
+          >
             {currentLanguage.bannerButton}
           </Link>
           {/* فقاعات */}
@@ -26,4 +29,4 @@ const NextCampaign = () => {
   );
 };
 
-export default NextCampaign;
+export default NextCampaignBanner;

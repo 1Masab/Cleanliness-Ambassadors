@@ -1,9 +1,9 @@
 import React from "react";
 import { StatisticsCardContent } from "../../data/Constants";
-import { styles } from "../../styles";
 import { useLanguage } from "../../context/LanguageContext";
+import { SectionsTitle } from "../../components";
 import FetchApi from "./StatisticsFetchedData";
-import SectionsTitle from "../../components/SectionsTitle";
+import { styles } from "../../styles";
 // this is the Statistics Section {هذا قسم الاحصائيات }
 const Statistics = () => {
   const { currentLanguage } = useLanguage();
@@ -20,7 +20,7 @@ const Statistics = () => {
           color="text-white before:bg-yellow-300"
         />
         <div className="grid lg:grid-cols-4 grid-cols-2 gap-10 max-w-[1000px] mt-4">
-          {StatisticsCardContent.map((item,index) => (
+          {StatisticsCardContent.map((item, index) => (
             <Statistics_Card
               key={item.StatisName}
               statsIcon={item.icon}
@@ -37,13 +37,11 @@ const Statistics = () => {
 };
 
 export default Statistics;
-const Statistics_Card = ({ statsIcon, IconAlt, CardName, NumOf,Deley }) => {
+const Statistics_Card = ({ statsIcon, IconAlt, CardName, NumOf, Deley }) => {
   const { currentLanguage, isRtl } = useLanguage();
   return (
     <div
-      className={
-        `sm:w-56 w-40 h-32 flex justify-center gap-2 py-4 bg-stone-100 items-start rounded-StatisticsCardRadius overflow-hidden relative statisticsCard OnScrollAnimation ${Deley}`
-      }
+      className={`sm:w-56 w-40 h-32 flex justify-center gap-2 py-4 bg-stone-100 items-start rounded-StatisticsCardRadius overflow-hidden relative statisticsCard OnScrollAnimation ${Deley}`}
     >
       <div className="flex items-center">
         <img

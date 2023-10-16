@@ -8,7 +8,7 @@ const LanguageSelector = () => {
     <div
       // I am user ternary operator to apply some styles because there is an issue related to how Tailwind CSS
       // processes the rtl: and ltr: classes when applied to inline elements like span or Pseudo-elements.
-      className={`MenuClass group border border-gray-300 rounded-md ml-2 mr-2 absolute top-11 z-50 bg-white ${
+      className={`LanguageSelectorMenu group border border-gray-300 rounded-md ml-2 mr-2 absolute top-11 z-50 bg-white ${
         firstOptionHovered ? "before:bg-slate-200" : ""
       } ${isRtl ? "left-[-15px] text-end" : "right-[-20px] before:left-[2rem] text-start"} `}
     >

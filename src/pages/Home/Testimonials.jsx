@@ -1,8 +1,8 @@
-import React,{ useState } from "react";
-import { leftArrow, rightArrow } from "../../assets";
-import SectionWrapper from "../../hoc/SectionWrapper";
-import { TestimonialData } from "../../data/Constants";
+import React, { useState } from "react";
 import { useLanguage } from "../../context/LanguageContext";
+import { TestimonialData } from "../../data/Constants";
+import SectionWrapper from "../../hoc/SectionWrapper";
+import { leftArrow, rightArrow } from "../../assets";
 // this is the Testimonials Section {هذا قسم شهادات او الاراء }
 const Testimonials = () => {
   const [currentTestimonialIndex, setCurrentTestimonialIndex] = useState(0);

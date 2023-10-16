@@ -118,7 +118,7 @@
 
   "faq_5_question": "How can I stay updated on Cleanliness Ambassadors' upcoming campaigns and initiatives?",
   "faq_5_answer": "To stay informed about our latest campaigns and initiatives, subscribe to our email notifications. You'll be the first to know about upcoming events, news, and ways to get involved. Simply fill out the email sign-up form on our homepage.",
-  "SponsorsAndPartnersTitle": "Our Partners and Sponsors",
+  "SponsorsAndPartnersTitle": "Partners and Sponsors",
   "SponsorsAndPartnersSubTitle": "We extend our sincere gratitude to the organizations and individuals who have supported our mission.",
   "StayInformedTitle": "Stay Informed",
   "StayInfomedSubTitle": "Get the latest news and updates about our campaigns, events, and initiatives.",
@@ -205,5 +205,7 @@
   },
   "donate": "Donate",
   "scrollUp": "Scroll up",
-  "allCampaignPlaceHoderText": "Raising awareness of the dangers of plastic waste is one of the most prominent activities of the Voluntary Cleanliness Ambassadors campaign in Iraq, as the campaign received youth support, transforming it from an individual idea a year ago into collective action in various Iraqi cities."
+  "allCampaignPlaceHoderText": "Raising awareness of the dangers of plastic waste is one of the most prominent activities of the Voluntary Cleanliness Ambassadors campaign in Iraq, as the campaign received youth support, transforming it from an individual idea a year ago into collective action in various Iraqi cities.",
+  "CampaignsLandingTitle": "Join the Cleanliness Movement, Join Our Next Campaign",
+  "CampaignsLandingSubTitle": "Subscribe to receive notifications and stay informed. Get ready for our upcoming campaign dedicated to making Iraq clean and greener."
 }

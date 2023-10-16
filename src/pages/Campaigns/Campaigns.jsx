@@ -2,10 +2,10 @@ import React from "react";
 import Landing from "./Landing";
 import PasstCamps from "./PastCamps";
 import { NextCampaign } from "../../components";
+import OpinionsOnNextCamp from "./OpinionsOnNextCamp";
+import StayInformed from "./StayInformed";
 import Resources from "./Resources";
 import Partners from "./Partners";
-import StayInformed from "./StayInformed";
-import OpinionsOnNextCamp from "./OpinionsOnNextCamp";
 
 const Campaigns = () => {
   return (

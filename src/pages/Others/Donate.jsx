@@ -1,9 +1,7 @@
 import React, { useState } from "react";
-import { styles } from "../../styles";
 import { useLanguage } from "../../context/LanguageContext";
-import Input from "../../components/Input";
-import CitySelector from "../../components/CitySelector";
-import { JoinButton } from "../../components";
+import { Input, CitySelector, JoinButton } from "../../components";
+import { styles } from "../../styles";
 const Donate = () => {
   const { currentLanguage, isRtl } = useLanguage();
   const [customAmountPopupOpen, setCustomAmountPopupOpen] = useState(false); // State for the popup

@@ -1,14 +1,13 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { applyIntersectionObserver } from "../../../OnScrollAnimation";
+import { NextCampaignBanner } from "../../components";
+import StayInformedH from "./StayInformedH";
+import Testimonials from "./Testimonials";
 import LandingHome from "./LandingHome";
+import Statistics from "./Statistics";
 import Overview from "./Overview";
 import Camps from "./Camps";
 import FAQs from "./FAQs";
-import Testimonials from "./Testimonials";
-import NextCampaignBanner from "../../components/NextCampaignBanner";
-import StayInformedH from "./StayInformedH";
-import Statistics from "./Statistics";
-import { useEffect } from "react";
-import { applyIntersectionObserver } from "../../../OnScrollAnimation";
 const Home = () => {
   useEffect(() => {
     // Call the applyIntersectionObserver function to apply the on scroll animation

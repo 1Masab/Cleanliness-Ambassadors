@@ -1,8 +1,6 @@
 import React, { useState } from "react";
-import Input from "../../components/Input";
-import { JoinButton } from "../../components";
 import { useLanguage } from "../../context/LanguageContext";
-import NextCampDetalis from "../../components/NextCampDetalis";
+import { JoinButton, NextCampDetalis, Input } from "../../components";
 import { treeInTheHand } from "../../assets";
 
 const Banner = () => {
@@ -37,7 +35,7 @@ const NextCampaignForme = () => {
     Name: currentLanguage.InputErrorMessages.Name,
     PhoneNumber: currentLanguage.InputErrorMessages.PhoneNumber,
     TelegramUserName: currentLanguage.InputErrorMessages.TelegramUserName,
-    email: currentLanguage.InputErrorMessages.email
+    email: currentLanguage.InputErrorMessages.email,
   };
   const handleInputChange = (e) => {
     const { name, value } = e.target;
@@ -57,7 +55,7 @@ const NextCampaignForme = () => {
 
   return (
     <section>
-      <Banner/>
+      <Banner />
       <div
         className={`w-fit mx-auto flex flex-col justify-center sm:pb-16 py-6 sm:px-0 px-5`}
       >

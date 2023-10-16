@@ -1,8 +1,8 @@
 import React from "react";
 import { useApiData } from "../../context/ApiContext";
 import { useLanguage } from "../../context/LanguageContext";
-import { styles } from "../../styles";
 import { instagram, swipeUpIcon } from "../../assets";
+import { styles } from "../../styles";
 const AllCamps = () => {
   const { language, currentLanguage } = useLanguage();
   const { apiData } = useApiData();

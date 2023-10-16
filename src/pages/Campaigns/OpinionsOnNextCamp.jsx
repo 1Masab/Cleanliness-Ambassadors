@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import Input from "../../components/Input";
-import { JoinButton } from "../../components";
-import { useLanguage } from "../../context/LanguageContext";
 import TextAarea from "../../components/TextAarea";
+import { useLanguage } from "../../context/LanguageContext";
+import { JoinButton } from "../../components";
+import Input from "../../components/Input";
 
 const OpinionsOnNextCamp = () => {
   const { currentLanguage } = useLanguage();
@@ -20,7 +20,7 @@ const OpinionsOnNextCamp = () => {
     e.preventDefault();
     console.log("Email:", formData.email);
     console.log("Message:", formData.message);
-    setFormData({email: "",message:""})
+    setFormData({ email: "", message: "" });
   };
 
   return (

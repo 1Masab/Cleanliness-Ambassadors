@@ -4,7 +4,7 @@ import { JoinButton } from "../../components";
 import { NextCampaignIllustration, waveImgCampaignsTop } from "../../assets";
 import CampaignsCards from "./CampaignsCards";
 import { Link } from "react-router-dom";
-import SectionsTitle from "../../components/SectionsTitle";
+import {SectionsTitle} from "../../components";
 // this is the Campaigns Section in the Hom page {هذا قسم الحملات في الصفحة الرئيسية }
 const Camps = () => {
   const { currentLanguage } = useLanguage();
@@ -25,7 +25,12 @@ const Camps = () => {
         <div className="timeline HomePage">
           <ul>
             {/* 👇 this component renders the past Campaings Cards*/}
-            <CampaignsCards startIndex={2} endIndex={6} theSkipedIndex={1} RenderOneImage/>
+            <CampaignsCards
+              startIndex={2}
+              endIndex={6}
+              theSkipedIndex={1}
+              RenderOneImage
+            />
             <li>
               <div className="timeline-content last-Card border-2 border-primary p-4 rounded-NextCampaign">
                 <img src={NextCampaignIllustration} />
@@ -42,7 +47,7 @@ const Camps = () => {
           </ul>
         </div>
         <Link to="/allCampaigns">
-        <JoinButton BtnText={"LaodMore"} BtnStyle={"text-white"} />
+          <JoinButton BtnText={"LaodMore"} BtnStyle={"text-white"} />
         </Link>
       </section>
     </>

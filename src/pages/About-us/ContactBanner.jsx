@@ -1,8 +1,8 @@
 import React from "react";
-import { styles } from "../../styles";
 import { useLanguage } from "../../context/LanguageContext";
+import { SectionsTitle } from "../../components";
 import { ContactUSS } from "../../assets";
-import SectionsTitle from "../../components/SectionsTitle";
+import { styles } from "../../styles";
 const ContactBanner = () => {
   const { currentLanguage } = useLanguage();
   return (
@@ -20,13 +20,16 @@ const ContactBanner = () => {
             </p>
 
             <h4 className="text-white font-thin text-lg py-2">
-             {currentLanguage.EmailAddress} : example@gmail.com
+              {currentLanguage.EmailAddress} : example@gmail.com
             </h4>
             <h4 className="text-white font-thin text-lg">
               Iraq, Baghdad, Al-Karradah, Near Al-Firdous Square
             </h4>
           </div>
-          <img src={ContactUSS} className="w-[100%] h-[500px] object-cover z-50" />
+          <img
+            src={ContactUSS}
+            className="w-[100%] h-[500px] object-cover z-50"
+          />
         </div>
       </div>
     </section>

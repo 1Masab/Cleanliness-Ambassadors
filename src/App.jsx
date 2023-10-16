@@ -10,8 +10,8 @@ import {
 import { useLanguage } from "./context/LanguageContext";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import NextCampaignForme from "./pages/Others/NextCampaignForme";
-import Donate from "./pages/Others/Donate";
 import AllCamps from "./pages/Others/AllCamps";
+import Donate from "./pages/Others/Donate";
 import React from "react";
 const App = () => {
   const { isRtl } = useLanguage();
