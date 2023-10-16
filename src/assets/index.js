@@ -40,7 +40,7 @@ import Hussain from "./HussainPhoto.webp";
 import Mohammed from "./MohamedPhoto.webp";
 import QuestionMark from "./overView.webp";
 import ContactUSS from "./ContactUss.webp";
-import TestimonialsGirl from "./testimonialsGirl.webp";
+import TestimonialsGirl from "./TestimonialsGirl.webp";
 import TestimonialsGirl2 from "./TestimonialsGirl2.webp";
 import TestimonialsMan from "./TestimonialsMan.webp";
 import CampaignHero from "./CampaignHero.webp";
@@ -58,9 +58,6 @@ import slide4 from "./slide4.webp";
 import wave4 from "./wave-haikei4.svg";
 import wave5 from "./wave-haikei5.svg";
 import waveImgCampaignsTop from "./wave-haikei3.svg";
-
-import plant2 from "./plant2.jpg";
-
 
 export {
   Aboutus,
@@ -91,7 +88,6 @@ export {
   NextCampaignf,
   NextCampaignIllustration,
   plant1,
-  plant2,
   playButton,
   QuestionMark,
   Resource1,
@@ -121,5 +117,5 @@ export {
   menuIcon,
   Mohammed,
   Partner2,
-  Partner3
+  Partner3,
 };
