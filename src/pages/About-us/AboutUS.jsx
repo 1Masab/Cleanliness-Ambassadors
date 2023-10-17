@@ -16,7 +16,7 @@ const AboutUS = () => {
         <img
           src={waveImgCampaignsTop}
           alt="svg wave shape"
-          className="absolute bottom-0 h-[300px] w-full"
+          className="absolute -bottom-[2px] h-[300px] w-full"
         />
       </div>
 

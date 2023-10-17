@@ -15,7 +15,7 @@ const StayInformed = () => {
             {currentLanguage.StayInfomedSubTitle}
           </p>
         </div>
-        <div className="py-5 rounded-t-full relative z-[2]">
+        <div className="py-5 px-2 rounded-t-full relative z-[2]">
           <div className=" absolute left-[50%] -top-2 translate-x-[-50%] z-[-1] w-[2000px] h-[2000px] bg-[#08221c91] rounded-full" />
           <SubscribInput />
         </div>

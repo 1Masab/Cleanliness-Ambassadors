@@ -47,7 +47,7 @@ const StaffImages = () => {
   const { currentLanguage, isRtl } = useLanguage();
 
   return (
-    <div className="flex flex-wrap gap-4 md:gap-10 lg:max-w-sm z-20">
+    <div className="flex flex-wrap gap-6 md:gap-10 lg:max-w-sm z-20">
       {StaffSocialMediaLinksAndJobs.map((item) => (
         <div
           key={item.memberName}
