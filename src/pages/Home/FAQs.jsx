@@ -18,7 +18,7 @@ const FAQs = () => {
   return (
     <div className="w-full mx-auto relative px-5">
       <div
-        className={`max-w-3xl relative mx-auto mb-10 ${
+        className={`max-w-3xl relative mx-auto mb-10 OnScrollAnimation OnScrollTranslateY-0 ${
           isBigScreen ? "xl:right-44" : ""
         }`}
       >
@@ -31,7 +31,7 @@ const FAQs = () => {
             key={item.question}
             className={`contentBx ${activeItems[index] ? "active" : ""}`}
             onClick={() => toggleItem(index)}
-          >
+          > 
             <div
               className={`label relative cursor-pointer h-[50px] flex items-center select-none my-4 transition-[0.4s] ${
                 isRtl ? "" : "direction-is-left"

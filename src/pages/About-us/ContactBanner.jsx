@@ -28,7 +28,7 @@ const ContactBanner = () => {
           </div>
           <img
             src={ContactUSS}
-            className="lg:w-[50%] w-full h-[500px] object-cover z-50"
+            className="lg:w-[450px] w-full h-[500px] object-cover z-50"
           />
         </div>
       </div>

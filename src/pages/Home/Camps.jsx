@@ -46,7 +46,7 @@ const Camps = () => {
             </li>
           </ul>
         </div>
-        <Link to="/allCampaigns">
+        <Link to="/allCampaigns" >
           <JoinButton BtnText={"LaodMore"} BtnStyle={"text-white"} />
         </Link>
       </section>

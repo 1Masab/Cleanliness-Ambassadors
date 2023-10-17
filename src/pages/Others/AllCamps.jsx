@@ -10,7 +10,6 @@ const AllCamps = () => {
   if (!apiData || apiData.length === 0) {
     // Displaying skeleton loading cards before the data is loaded
     const skeletonCards = (
-      //   <div className="text-3xl w-full h-[90vh] flex items-center justify-center Loeading"/>
       <div className="text-3xl w-full h-[90vh] flex items-center justify-center mt-[70px]">
         <div className="LoadingEffect">
           <div></div>
@@ -22,6 +21,8 @@ const AllCamps = () => {
   }
   return (
     <>
+    {/* this is just to direct the user to the top of the page when he land */}
+    <span id="topPage"/>
       <div
         className={`${styles.padding} mt-[71px] max-w-7xl flex gap-10 flex-wrap mx-auto`}
       >

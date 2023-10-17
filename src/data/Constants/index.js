@@ -72,7 +72,7 @@ const SocialMediaIconsContent = [
     url: "https://www.tiktok.com/@the.murt/video/7081254157889326378",
     iconName: "tiktok logo",
   },
-  { icon: donationIcon, url: "#", iconName: "donation icon" },
+  { icon: donationIcon, url: "/Donate", iconName: "donation icon" },
 ];
 const TestimonialData = [
   {

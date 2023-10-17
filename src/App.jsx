@@ -1,3 +1,4 @@
+import React from "react";
 import {
   Header,
   Home,
@@ -12,15 +13,17 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import NextCampaignForme from "./pages/Others/NextCampaignForme";
 import AllCamps from "./pages/Others/AllCamps";
 import Donate from "./pages/Others/Donate";
-import React from "react";
+import ScrollToTop from "./components/ScrollToTop";
 const App = () => {
   const { isRtl } = useLanguage();
+
   return (
     <div
       style={{ direction: isRtl ? "rtl" : "ltr" }}
       className="min-h-[100%] flex flex-col"
     >
       <BrowserRouter>
+      <ScrollToTop/>
         <Header />
         <main>
           <Routes>

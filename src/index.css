@@ -25,7 +25,7 @@ body {
 ::-webkit-scrollbar {
   display: none;
 }
-/* 👇 =====Home page (Sections)==== */
+/* 👇 ===== Home page (Sections) ==== */
 .Logo {
   box-shadow: 3px 3px 0px var(--primaryColor);
 }
