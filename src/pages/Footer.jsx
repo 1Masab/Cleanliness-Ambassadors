@@ -47,7 +47,7 @@ const Footer = () => {
       </div>
       <p className="text-sm">
         made with Love by{" "}
-        <a href="#" className="text-sky-500 hover:text-sky-600 underline">
+        <a href="https://www.instagram.com/fcybeer" className="text-sky-500 hover:text-sky-600 underline" target="_blank">
           @Masab
         </a>
       </p>
