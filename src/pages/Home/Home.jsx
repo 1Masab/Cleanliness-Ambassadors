@@ -25,9 +25,7 @@ const Home = () => {
       <Statistics />
       <FAQs />
       <Testimonials />
-      <section>
-        <NextCampaignBanner />
-      </section>
+      <NextCampaignBanner />
       <StayInformedH />
     </>
   );

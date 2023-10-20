@@ -16,7 +16,7 @@ const FAQs = () => {
   };
   const isBigScreen = window.innerWidth >= 1450;
   return (
-    <div className="w-full mx-auto relative px-5">
+    <section className="w-full mx-auto relative px-5">
       <div
         className={`max-w-3xl relative mx-auto mb-10 OnScrollAnimation OnScrollTranslateY-0 ${
           isBigScreen ? "xl:right-44" : ""
@@ -52,7 +52,7 @@ const FAQs = () => {
         ))}
       </div>
       {isBigScreen ? <img src={tree} className="absolute top-5 right-0" /> : ""}
-    </div>
+    </section>
   );
 };
 

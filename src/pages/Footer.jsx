@@ -6,9 +6,12 @@ import { SocialMediaIcons } from "../components";
 import { Link } from "react-router-dom";
 import NavBar from "./Header/NavBar";
 const Footer = () => {
-  const { currentLanguage } = useLanguage();
+  const { currentLanguage, isRtl } = useLanguage();
   return (
-    <footer className="flex flex-col gap-5 items-center justify-center pb-5 bg-[#08221c] text-white mt-auto">
+    <footer
+      className="flex flex-col gap-5 items-center justify-center pb-5 bg-[#08221c] text-white mt-auto"
+      style={{ direction: isRtl ? "rtl" : "ltr" }}
+    >
       <div className="max-w-7xl w-full mx-auto sm:px-12 px-6 sm:py-8 py-10 flex flex-col md:flex-row flex-wrap gap-10 justify-between items-center text-center md:text-start">
         <div className="flex items-center">
           <img src={LogoWhite} alt="White logo" className="w-20" />
@@ -19,7 +22,7 @@ const Footer = () => {
           </h4>
 
           <ul className="flex flex-wrap items-center justify-center text-center md:text-start leading-[30px]">
-            <NavBar isfooter={true}/>
+            <NavBar isfooter={true} />
           </ul>
         </nav>
         <div>
@@ -47,7 +50,11 @@ const Footer = () => {
       </div>
       <p className="text-sm">
         made with Love by{" "}
-        <a href="https://www.instagram.com/fcybeer" className="text-sky-500 hover:text-sky-600 underline" target="_blank">
+        <a
+          href="https://www.instagram.com/fcybeer"
+          className="text-sky-500 hover:text-sky-600 underline"
+          target="_blank"
+        >
           @Masab
         </a>
       </p>

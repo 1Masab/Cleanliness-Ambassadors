@@ -18,14 +18,11 @@ const App = () => {
   const { isRtl } = useLanguage();
 
   return (
-    <div
-      style={{ direction: isRtl ? "rtl" : "ltr" }}
-      className="min-h-[100%] flex flex-col"
-    >
+    <>
       <BrowserRouter>
-      <ScrollToTop/>
+        <ScrollToTop />
         <Header />
-        <main>
+        <main style={{ direction: isRtl ? "rtl" : "ltr" }}>
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/About" element={<AboutUS />} />
@@ -39,7 +36,7 @@ const App = () => {
         </main>
         <Footer />
       </BrowserRouter>
-    </div>
+    </>
   );
 };
 

@@ -24,7 +24,7 @@ const VideoPopUp = () => {
           className="w-full h-full object-cover opacity-90"
         />
         {/* Play button */}
-        <img src={playButton} alt="play button icon" className="absolute" />
+        <img src={playButton} alt="play button icon" className="absolute animate" />
       </button>
 
       {/* Video popup */}
