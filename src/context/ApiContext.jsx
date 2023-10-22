@@ -7,26 +7,15 @@ export const ApiProvider = ({ children }) => {
   const [retryCount, setRetryCount] = useState(0);
 
   useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const response = await fetch(
-          "https://clean-iraq-campaigns.murtadha-altameemi2156.workers.dev"
-        );
-        if (!response.ok) {
-          throw new Error(
-            `Failed to fetch data (HTTP status: ${response.status})`
-          );
-        }
-        const data = await response.json();
-        setApiData(data);
-      } catch (err) {
-        console.log(err);
+    fetch("https://clean-iraq-campaigns.murtadha-altameemi2156.workers.dev")
+      .then((response) => response.json())
+      .then((data) => setApiData(data))
+      .catch((error) => {
         if (retryCount < 3) {
           setRetryCount(retryCount + 1);
-          fetchData();
+          console.log(error);
         }
-      }
-    };
+      });
   }, [retryCount]);
   return (
     <ApiContext.Provider value={{ apiData }}>{children}</ApiContext.Provider>

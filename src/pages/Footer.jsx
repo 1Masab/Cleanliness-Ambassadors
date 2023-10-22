@@ -55,7 +55,7 @@ const Footer = () => {
           className="text-sky-500 hover:text-sky-600 underline"
           target="_blank"
         >
-          @F-CYBER
+          @FCYBER
         </a>
       </p>
     </footer>
